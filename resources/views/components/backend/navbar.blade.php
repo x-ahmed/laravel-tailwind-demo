@@ -2,7 +2,7 @@
     class="absolute top-0 left-0 z-10 flex items-center w-full p-4 bg-transparent md:flex-row md:flex-nowrap md:justify-start">
     <div class="flex flex-wrap items-center justify-between w-full px-4 mx-autp md:flex-nowrap md:px-10">
         <a class="hidden text-sm font-semibold text-white uppercase lg:inline-block"
-            href="./index.html">Dashboard</a>
+            href="{{ route('admin.index') }}">Dashboard</a>
         <form class="flex-row flex-wrap items-center hidden mr-3 md:flex lg:ml-auto">
             <div class="relative flex flex-wrap items-stretch w-full">
                 <span
@@ -15,7 +15,7 @@
         </form>
         <ul class="flex-col items-center hidden list-none md:flex-row md:flex">
             <a class="block text-blueGray-500"
-                href="#pablo"
+                href="javascript:void(0);"
                 onclick="openDropdown(event,'user-dropdown')">
                 <div class="flex items-center">
                     <span
@@ -27,15 +27,15 @@
             </a>
             <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                 id="user-dropdown">
-                <a href="#pablo"
+                <a href="{{ route('admin.index') }}"
                     class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                    href="#pablo"
+                    href="{{ route('admin.index') }}"
                     class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                    action</a><a href="#pablo"
+                    action</a><a href="{{ route('admin.index') }}"
                     class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                     else here</a>
                 <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                <a href="#pablo"
+                <a href="{{ route('admin.index') }}"
                     class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                     link</a>
             </div>

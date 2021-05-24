@@ -13,16 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/welcome', 'frontend.index');
-Route::view('/user/profile', 'frontend.profile');
 
-Route::view('/admin/tables', 'backend.tables');
-Route::view('/admin/settings', 'backend.settings');
-Route::view('/admin/maps', 'backend.maps');
-Route::view('/admin/dashboard', 'backend.index');
+
+Route::view('/profile', 'frontend.profile')->name('profile');
+
+Route::group([
+    'prefix' => 'admin',
+    'as'     => 'admin.',
+], function () {
+    Route::view('tables', 'backend.tables')->name('tables');
+    Route::view('settings', 'backend.settings')->name('settings');
+    Route::view('maps', 'backend.maps')->name('maps');
+    Route::view('dashboard', 'backend.index')->name('dashboard');
+    Route::view('/', 'backend.index')->name('index');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::view('/', 'welcome');
+Route::view('/welcome', 'frontend.index')->name('welcome');
+Route::view('/', 'frontend.index')->name('index');
+// Route::view('/', 'welcome');

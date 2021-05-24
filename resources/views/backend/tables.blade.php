@@ -93,22 +93,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-light-1-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-light-1-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -165,22 +165,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-light-2-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-light-2-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -237,22 +237,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-light-3-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-light-3-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -309,22 +309,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-light-4-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-light-4-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -381,22 +381,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-light-5-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-light-5-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -501,22 +501,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-dark-1-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-dark-1-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -573,22 +573,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-dark-2-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-dark-2-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -645,22 +645,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-dark-3-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-dark-3-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -717,22 +717,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-dark-4-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-dark-4-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
@@ -789,22 +789,22 @@
                                 </td>
                                 <td
                                     class="p-4 px-6 text-xs text-right align-middle border-t-0 border-l-0 border-r-0 whitespace-nowrap">
-                                    <a href="#pablo"
+                                    <a href="javascript:void(0);"
                                         class="block px-3 py-1 text-blueGray-500"
                                         onclick="openDropdown(event,'table-dark-5-dropdown')">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </a>
                                     <div class="z-50 hidden float-left py-2 text-base text-left list-none bg-white rounded shadow-lg min-w-48"
                                         id="table-dark-5-dropdown">
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Action</a><a
-                                            href="#pablo"
+                                            href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Another
-                                            action</a><a href="#pablo"
+                                            action</a><a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                                             else here</a>
                                         <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                                        <a href="#pablo"
+                                        <a href="javascript:void(0);"
                                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
                                             link</a>
                                     </div>
