@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/welcome', 'frontend.index');
+Route::view('/user/profile', 'frontend.profile');
+
+Route::view('/admin/tables', 'backend.tables');
+Route::view('/admin/settings', 'backend.settings');
+Route::view('/admin/maps', 'backend.maps');
+Route::view('/admin/dashboard', 'backend.index');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::view('/', 'welcome');
