@@ -2,7 +2,7 @@
     <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
         <div class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
             <a class="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-nowrap"
-                href="../index.html">Notus JS</a><button
+                href="{{ route('index') }}">Notus JS</a><button
                 class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
                 type="button"
                 onclick="toggleNavbar('example-collapse-navbar')">
@@ -22,7 +22,7 @@
             <ul class="flex flex-col items-center list-none lg:flex-row lg:ml-auto">
                 <li class="relative inline-block">
                     <a class="flex items-center px-3 py-4 text-xs font-bold uppercase lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 lg:py-2"
-                        href="#pablo"
+                        href="javascript:void(0);"
                         onclick="openDropdown(event,'demo-pages-dropdown')">
                         Demo Pages
                     </a>
@@ -32,19 +32,19 @@
                             class="block w-full px-4 pt-2 pb-0 text-sm font-bold bg-transparent whitespace-nowrap text-blueGray-400">
                             Admin Layout
                         </span>
-                        <a href="./admin/dashboard.html"
+                        <a href="{{ route('admin.index') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Dashboard
                         </a>
-                        <a href="./admin/settings.html"
+                        <a href="{{ route('admin.settings') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Settings
                         </a>
-                        <a href="./admin/tables.html"
+                        <a href="{{ route('admin.tables') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Tables
                         </a>
-                        <a href="./admin/maps.html"
+                        <a href="{{ route('admin.maps') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Maps
                         </a>
@@ -53,11 +53,11 @@
                             class="block w-full px-4 pt-2 pb-0 text-sm font-bold bg-transparent whitespace-nowrap text-blueGray-400">
                             Auth Layout
                         </span>
-                        <a href="./auth/login.html"
+                        <a href="{{ route('login') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Login
                         </a>
-                        <a href="./auth/register.html"
+                        <a href="{{ route('register') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Register
                         </a>
@@ -66,11 +66,11 @@
                             class="block w-full px-4 pt-2 pb-0 text-sm font-bold bg-transparent whitespace-nowrap text-blueGray-400">
                             No Layout
                         </span>
-                        <a href="./landing.html"
+                        <a href="{{ route('index') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Landing
                         </a>
-                        <a href="./profile.html"
+                        <a href="{{ route('profile') }}"
                             class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
                             Profile
                         </a>

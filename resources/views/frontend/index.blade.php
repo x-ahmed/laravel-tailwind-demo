@@ -105,7 +105,7 @@
                         faster. You can change the text and images and you're good to
                         go. Just make sure you enable them first via JavaScript.
                     </p>
-                    <a href="../index.html"
+                    <a href="{{ route('index') }}"
                         class="mt-8 font-bold text-blueGray-700">Check Notus JS!</a>
                 </div>
                 <div class="w-full px-4 ml-auto mr-auto md:w-4/12">

@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('/profile', 'frontend.profile')->name('profile');
 
 Route::group([
     'prefix' => 'admin',
@@ -32,6 +31,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::view('/profile', 'frontend.profile')->name('profile');
 Route::view('/welcome', 'frontend.index')->name('welcome');
 Route::view('/', 'frontend.index')->name('index');
 // Route::view('/', 'welcome');

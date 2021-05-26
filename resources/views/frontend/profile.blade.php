@@ -89,7 +89,7 @@
                                     warm, intimate feel with a solid groove structure. An
                                     artist of considerable range.
                                 </p>
-                                <a href="#pablo"
+                                <a href="{{ route('profile') }}"
                                     class="font-normal text-pink-500">Show more</a>
                             </div>
                         </div>

@@ -40,6 +40,7 @@
         </main>
     <x-frontend.footer />
     @livewireScripts
+    @stack('script')
 </body>
 
 </html>
