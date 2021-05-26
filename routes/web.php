@@ -13,23 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-
 Route::group([
-    'prefix' => 'admin',
-    'as'     => 'admin.',
+    'middleware' => ['auth:sanctum', 'verified'],
 ], function () {
-    Route::view('tables', 'backend.tables')->name('tables');
-    Route::view('settings', 'backend.settings')->name('settings');
-    Route::view('maps', 'backend.maps')->name('maps');
-    Route::view('dashboard', 'backend.index')->name('dashboard');
-    Route::view('/', 'backend.index')->name('index');
-});
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+    Route::group([
+        'middleware' => ['role:admin|supervisor'],
+        'prefix'     => 'admin',
+        'as'         => 'admin.',
+    ], function () {
+        Route::view('tables', 'backend.tables')->name('tables');
+        Route::view('settings', 'backend.settings')->name('settings');
+        Route::view('maps', 'backend.maps')->name('maps');
+        Route::view('dashboard', 'backend.index')->name('dashboard');
+        Route::view('/', 'backend.index')->name('index');
+    });
+
+    Route::view('/dashboard', 'dashboard')->name('dashboard');
+});
 
 Route::view('/profile', 'frontend.profile')->name('profile');
 Route::view('/welcome', 'frontend.index')->name('welcome');
