@@ -62,5 +62,13 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        /**
+         * Packages Middleware...
+         *
+         */
+        'role' => \Mindscms\Entrust\Middleware\EntrustRole::class,
+        'permission' => \Mindscms\Entrust\Middleware\EntrustPermission::class,
+        'ability' => \Mindscms\Entrust\Middleware\EntrustAbility::class,
     ];
 }

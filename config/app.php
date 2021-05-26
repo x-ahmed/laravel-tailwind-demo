@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Mindscms\Entrust\EntrustServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +231,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /*
+         * Package Aliases...
+         */
+        'Entrust'   => Mindscms\Entrust\EntrustFacade::class,
     ],
 
 ];
