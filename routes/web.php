@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\PageController;
+use App\Http\Controllers\Backend\PostController;
+use App\Http\Controllers\Backend\PostCommentController;
+use App\Http\Controllers\Backend\PostCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +26,11 @@ Route::group([
         'prefix'     => 'admin',
         'as'         => 'admin.',
     ], function () {
+        Route::resource('post_categories', PostCategoryController::class);
+        Route::resource('post_comments', PostCommentController::class);
+        Route::resource('posts', PostController::class);
+        Route::resource('pages', PageController::class);
+
         Route::view('tables', 'backend.tables')->name('tables');
         Route::view('settings', 'backend.settings')->name('settings');
         Route::view('maps', 'backend.maps')->name('maps');

@@ -41,8 +41,7 @@
                     <div class="flex items-center">
                         <span
                             class="inline-flex items-center justify-center w-12 h-12 text-sm text-white rounded-full bg-blueGray-200">
-                            <img
-                                alt="..."
+                            <img alt="..."
                                 class="w-full align-middle border-none rounded-full shadow-lg"
                                 src="{{ asset('theme/assets/img/team-1-800x800.jpg') }}" />
                         </span>
@@ -99,6 +98,16 @@
             <!-- Navigation -->
 
             <ul class="flex flex-col list-none md:flex-col md:min-w-full">
+                @foreach ($backendSidebarTree as $item)
+                    <li class="items-center">
+                        <a href="{{ route("admin.{$item->as}") }}"
+                            class="block py-3 text-xs font-bold uppercase {{ $currentRouteName === "admin.{$item->as}" || \Illuminate\Support\Str::contains(request()->path(), $item->module) ? 'text-pink-500 hover:text-pink-600' : 'text-blueGray-700 hover:text-blueGray-500' }}">
+                            <i class="mr-2 text-sm opacity-75 {{ $item->icon ?? 'fas fa-tv' }}"></i>
+                            {{ $item->display_name }}
+                        </a>
+                    </li>
+                @endforeach
+
                 <li class="items-center">
                     <a href="{{ route('admin.index') }}"
                         class="block py-3 text-xs font-bold text-pink-500 uppercase hover:text-pink-600">

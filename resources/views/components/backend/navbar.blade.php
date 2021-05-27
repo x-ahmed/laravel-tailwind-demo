@@ -35,9 +35,18 @@
                     class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Something
                     else here</a>
                 <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
-                <a href="{{ route('admin.index') }}"
-                    class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">Seprated
-                    link</a>
+
+                <form method="POST"
+                    action="{{ route('logout') }}">
+                    @csrf
+
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                this.closest('form').submit();"
+                        class="block w-full px-4 py-2 text-sm font-normal bg-transparent whitespace-nowrap text-blueGray-700">
+                        {{ __('Log Out') }}
+                    </a>
+                </form>
             </div>
         </ul>
     </div>

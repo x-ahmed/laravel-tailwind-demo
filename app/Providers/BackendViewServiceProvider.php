@@ -41,6 +41,7 @@ class BackendViewServiceProvider extends ServiceProvider
      */
     private function registerCachedBackendSidebarTree(): void
     {
+        // Cache::forget('backendSidebarTree');
         if (Str::contains(request()->path(), 'admin')) {
             view()->composer('*', function ($view) {
                 if (!Cache::has('backendSidebarTree')) {
@@ -49,6 +50,7 @@ class BackendViewServiceProvider extends ServiceProvider
 
                 $view->with([
                     'backendSidebarTree' => Cache::get('backendSidebarTree'),
+                    'currentRouteName'   => \Illuminate\Support\Facades\Route::currentRouteName(),
                 ]);
             });
         }
