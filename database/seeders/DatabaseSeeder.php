@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             EntrustSeeder::class,
         ]);
+        \App\Models\User::factory(17)->create();
     }
 }
