@@ -98,6 +98,7 @@
             <!-- Navigation -->
 
             <ul class="flex flex-col list-none md:flex-col md:min-w-full">
+                @role(['admin'])
                 @foreach ($backendSidebarTree as $item)
                     <li class="items-center">
                         <a href="{{ route("admin.{$item->as}") }}"
@@ -107,8 +108,23 @@
                         </a>
                     </li>
                 @endforeach
+                @endrole
 
-                <li class="items-center">
+                @role(['supervisor'])
+                @foreach ($backendSidebarTree as $item)
+                    @permission($item->name)
+                        <li class="items-center">
+                            <a href="{{ route("admin.{$item->as}") }}"
+                                class="block py-3 text-xs font-bold uppercase {{ $currentRouteName === "admin.{$item->as}" || \Illuminate\Support\Str::contains(request()->path(), $item->module) ? 'text-pink-500 hover:text-pink-600' : 'text-blueGray-700 hover:text-blueGray-500' }}">
+                                <i class="mr-2 text-sm opacity-75 {{ $item->icon ?? 'fas fa-tv' }}"></i>
+                                {{ $item->display_name }}
+                            </a>
+                        </li>
+                        @endpermission
+                    @endforeach
+                    @endrole
+
+                    {{-- <li class="items-center">
                     <a href="{{ route('admin.index') }}"
                         class="block py-3 text-xs font-bold text-pink-500 uppercase hover:text-pink-600">
                         <i class="mr-2 text-sm opacity-75 fas fa-tv"></i>
@@ -138,63 +154,63 @@
                         <i class="mr-2 text-sm fas fa-map-marked text-blueGray-300"></i>
                         Maps
                     </a>
-                </li>
-            </ul>
+                </li> --}}
+                </ul>
 
-            <!-- Divider -->
-            <hr class="my-4 md:min-w-full" />
-            <!-- Heading -->
-            <h6 class="block pt-1 pb-4 text-xs font-bold no-underline uppercase md:min-w-full text-blueGray-500">
-                Auth Layout Pages
-            </h6>
-            <!-- Navigation -->
+                <!-- Divider -->
+                <hr class="my-4 md:min-w-full" />
+                <!-- Heading -->
+                <h6 class="block pt-1 pb-4 text-xs font-bold no-underline uppercase md:min-w-full text-blueGray-500">
+                    Auth Layout Pages
+                </h6>
+                <!-- Navigation -->
 
-            <ul class="flex flex-col list-none md:flex-col md:min-w-full md:mb-4">
-                <li class="items-center">
-                    <a href="{{ route('admin.index') }}"
-                        class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
-                        <i class="mr-2 text-sm fas fa-fingerprint text-blueGray-300"></i>
-                        Login
-                    </a>
-                </li>
+                <ul class="flex flex-col list-none md:flex-col md:min-w-full md:mb-4">
+                    <li class="items-center">
+                        <a href="{{ route('admin.index') }}"
+                            class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
+                            <i class="mr-2 text-sm fas fa-fingerprint text-blueGray-300"></i>
+                            Login
+                        </a>
+                    </li>
 
-                <li class="items-center">
-                    <a href="{{ route('admin.index') }}"
-                        class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
-                        <i class="mr-2 text-sm fas fa-clipboard-list text-blueGray-300"></i>
-                        Register
-                    </a>
-                </li>
-            </ul>
+                    <li class="items-center">
+                        <a href="{{ route('admin.index') }}"
+                            class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
+                            <i class="mr-2 text-sm fas fa-clipboard-list text-blueGray-300"></i>
+                            Register
+                        </a>
+                    </li>
+                </ul>
 
-            <!-- Divider -->
-            <hr class="my-4 md:min-w-full" />
-            <!-- Heading -->
-            <h6 class="block pt-1 pb-4 text-xs font-bold no-underline uppercase md:min-w-full text-blueGray-500">
-                No Layout Pages
-            </h6>
-            <!-- Navigation -->
+                <!-- Divider -->
+                <hr class="my-4 md:min-w-full" />
+                <!-- Heading -->
+                <h6 class="block pt-1 pb-4 text-xs font-bold no-underline uppercase md:min-w-full text-blueGray-500">
+                    No Layout Pages
+                </h6>
+                <!-- Navigation -->
 
-            <ul class="flex flex-col list-none md:flex-col md:min-w-full md:mb-4">
-                <li class="items-center">
-                    <a href="{{ route('index') }}"
-                        class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
-                        <i class="mr-2 text-sm fas fa-newspaper text-blueGray-300"></i>
-                        Landing Page
-                    </a>
-                </li>
+                <ul class="flex flex-col list-none md:flex-col md:min-w-full md:mb-4">
+                    <li class="items-center">
+                        <a href="{{ route('index') }}"
+                            class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
+                            <i class="mr-2 text-sm fas fa-newspaper text-blueGray-300"></i>
+                            Landing Page
+                        </a>
+                    </li>
 
-                <li class="items-center">
-                    <a href="{{ route('profile') }}"
-                        class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
-                        <i class="mr-2 text-sm fas fa-user-circle text-blueGray-300"></i>
-                        Profile Page
-                    </a>
-                </li>
-            </ul>
+                    <li class="items-center">
+                        <a href="{{ route('profile') }}"
+                            class="block py-3 text-xs font-bold uppercase text-blueGray-700 hover:text-blueGray-500">
+                            <i class="mr-2 text-sm fas fa-user-circle text-blueGray-300"></i>
+                            Profile Page
+                        </a>
+                    </li>
+                </ul>
 
-            <!-- Divider -->
-            <hr class="my-4 md:min-w-full" />
+                <!-- Divider -->
+                <hr class="my-4 md:min-w-full" />
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>

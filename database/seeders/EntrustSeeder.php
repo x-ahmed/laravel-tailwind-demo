@@ -103,7 +103,7 @@ class EntrustSeeder extends Seeder
         $displayPost = Permission::create([
             'name'            => 'display_posts',
             'display_name'    => 'Show Post',
-            'route'           => 'posts/{posts}',
+            'route'           => 'posts/{post}',
             'module'          => 'posts',
             'as'              => 'posts.show',
             'icon'            => null,
@@ -116,7 +116,7 @@ class EntrustSeeder extends Seeder
         $updatePosts = Permission::create([
             'name'            => 'update_posts',
             'display_name'    => 'Update Post',
-            'route'           => 'posts/{posts}/edit',
+            'route'           => 'posts/{post}/edit',
             'module'          => 'posts',
             'as'              => 'posts.edit',
             'icon'            => null,
@@ -129,7 +129,7 @@ class EntrustSeeder extends Seeder
         $destroyPosts = Permission::create([
             'name'            => 'delete_posts',
             'display_name'    => 'Delete Post',
-            'route'           => 'posts/{posts}',
+            'route'           => 'posts/{post}',
             'module'          => 'posts',
             'as'              => 'posts.delete',
             'icon'            => null,
